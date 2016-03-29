@@ -1,7 +1,7 @@
 Package: binaryLogic
 Title: Binary Logic
 Description: Convert to binary numbers (Base2). Shift, rotate, summary. Based on logical vector.
-Version: 0.3.2
+Version: 0.3.4
 Author: Daniel Dörrhöfer <ddo@openmailbox.org>
 Maintainer: Daniel Dörrhöfer <ddo@openmailbox.org>
 URL: https://github.com/d4ndo/binaryLogic
@@ -13,6 +13,6 @@ LazyData: true
 Encoding: UTF-8
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-01-19 13:34:52 UTC; daniel
+Packaged: 2016-03-29 15:56:37 UTC; daniel
 Repository: CRAN
-Date/Publication: 2016-01-19 15:04:01
+Date/Publication: 2016-03-29 18:59:33

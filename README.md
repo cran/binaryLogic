@@ -2,7 +2,7 @@
 binaryLogic
 ===========
 
-[![Build Status](https://travis-ci.org/d4ndo/binaryLogic.png)](https://travis-ci.org/d4ndo/binaryLogic) [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/binaryLogic)](http://cran.r-project.org/web/packages/binaryLogic/index.html) [![CRAN version](http://www.r-pkg.org/badges/version/binaryLogic)](http://cran.r-project.org/package=binaryLogic)
+[![Build Status](https://travis-ci.org/d4ndo/binaryLogic.png)](https://travis-ci.org/d4ndo/binaryLogic) [![Downloads](http://cranlogs.r-pkg.org/badges/binaryLogic?color=brightgreen)](http://www.r-pkg.org/pkg/binaryLogic) [![CRAN version](http://www.r-pkg.org/badges/version/binaryLogic)](http://cran.r-project.org/package=binaryLogic)
 
 Binary Logic GNU R Package
 
@@ -203,13 +203,47 @@ as.logical(as.binary(2))
 ### Raw
 
 ``` r
-b <- as.binary(charToRaw("A")); 
-summary(b);
+b <- as.binary(charToRaw("A"))
+summary(b)
 #>   Signedness  Endianess value<0 Size[bit] Base10
 #> 1   unsigned Big-Endian   FALSE         7     65
 
-as.raw(b);
+as.raw(b)
 #> [1] 41
+```
+
+### Gray code
+
+``` r
+b <- as.binary(0:7, n=3)
+g <- lapply(b, bin2gray)
+print(g)
+#> [[1]]
+#> [1] FALSE FALSE FALSE
+#> 
+#> [[2]]
+#> [1] FALSE FALSE  TRUE
+#> 
+#> [[3]]
+#> [1] FALSE  TRUE  TRUE
+#> 
+#> [[4]]
+#> [1] FALSE  TRUE FALSE
+#> 
+#> [[5]]
+#> [1]  TRUE  TRUE FALSE
+#> 
+#> [[6]]
+#> [1] TRUE TRUE TRUE
+#> 
+#> [[7]]
+#> [1]  TRUE FALSE  TRUE
+#> 
+#> [[8]]
+#> [1]  TRUE FALSE FALSE
+
+gray2bin(g[[8]])
+#> [1] 1 1 1
 ```
 
 Special Case
