@@ -1,12 +1,12 @@
-2d63a50907aa1dbf404d24bd6a28bde0 *DESCRIPTION
+d14afba48ea034c6643e300f21b1a724 *DESCRIPTION
 57542fb7e6992e2f61c99fffbb00e679 *LICENSE
 faeb86a2a70be6d224271f52bc97791b *NAMESPACE
-cbc66b50dcbe5db6601802e1ada245a4 *R/BinaryS3.R
+482cb5b46edd5dc11a3ff8aab05221ee *R/BinaryS3.R
 b6f60bd63784350a7451f34e11645fbb *R/binAdd.R
 5d8169864013a935d60acc5641f7f8a1 *R/binHelper.R
 c95d22919c4884f233616bd7391e44cd *R/binOperators.R
 35342e3c21299dd7212693d7f350144a *R/binaryLogic.R
-55d5ac26062e5e89b0ec39b3c8bfd2af *README.md
+e86f18293749aac08c3d2e8753ee5f4e *README.md
 57abee26aaf186e51d31b2a103785a17 *man/Ops.binary.Rd
 fad1a07e5ee61a9ba5120350a450705f *man/as.binary.Rd
 b79a79ad7e0548b6219fdb2a63bcfe8c *man/bin2gray.Rd
@@ -33,4 +33,4 @@ f2f87229be0ea30648bf6badd62dd108 *man/switchEndianess.Rd
 96ebd52e00c13b055b91c9d0e7c868af *tests/run-all.R
 b5593296b9ff5d14989c2b0189b2327b *tests/testthat/test-BinaryS3.R
 963ef93f44c4f67c816aa6d3c212f3bf *tests/testthat/test-binHelper.R
-c9e77ce18bf48e90da83ed90b46fd006 *tests/testthat/test-binOperators.R
+30da611ba6270e22d1f5c63828cc1696 *tests/testthat/test-binOperators.R
